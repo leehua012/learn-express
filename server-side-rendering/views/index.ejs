@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title><%= title%></title>
+  </head>
+  <body>
+    <%- include("./header.ejs") %>
+    <% if (login) { %>
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+            <% for (var i = 0; i < user.length; i++) { %>
+                <tr>
+                    <td><%= user[i].username %></td>
+                    <td><%= user[i].password %></td>
+                </tr>
+            <% } %>
+        </table>
+      <% } %>
+  </body>
+</html>

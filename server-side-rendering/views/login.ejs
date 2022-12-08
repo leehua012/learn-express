@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <%- include("./header.ejs") %>
+    <%# include("./header.ejs", {isShowAdditional: false}) %>
+    <form action="/login" method="post">
+        <label for="username">Username:  </label>
+        <input type="text" name="username" placeholder="Username"><br>
+        <label for="password">Password:  </label>
+        <input type="password" name="password" placeholder="Password"><br>
+        <input type="submit" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Reset">
+    </form>
+</html>
